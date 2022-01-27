@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000014;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.rotate {
+  animation: rotation 8s infinite linear;
+  margin-top: 2px;
+  position: relative;
+  top: auto;
+  left: auto;
+  opacity: 0.7;
+}
+
+.parent {
+  position: relative;
+  top: auto;
+  left: auto;
+  text-align: center;
+}
+.image1 {
+  position: relative;
+  top: auto;
+  left: auto;
+  opacity: 0.7;
+}
+
+.image2 {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  margin-left: -140px;
+  margin-top: 130px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.heading {
+  text-align: center;
+  font-size: 3rem;
+  margin: 10px 0 0 0;
+}
+
+.neon {
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.heading h3 {
+  color: #fff;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+.heading h3:hover {
+  color: #0d47a1;
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px#0D47A1,
+      0 0 70px#0D47A1, 0 0 80px#0D47A1, 0 0 100px#0D47A1, 0 0 150px#0D47A1;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px#0D47A1,
+      0 0 35px#0D47A1, 0 0 40px#0D47A1, 0 0 50px#0D47A1, 0 0 75px#0D47A1;
+  }
+}
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px#0D47A1,
+      0 0 70px#0D47A1, 0 0 80px#0D47A1, 0 0 100px#0D47A1, 0 0 150px#0D47A1;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px#0D47A1,
+      0 0 35px#0D47A1, 0 0 40px#0D47A1, 0 0 50px#0D47A1, 0 0 75px#0D47A1;
+  }
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin-right: 5px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
